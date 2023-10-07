@@ -174,7 +174,6 @@ button.search-form__submit-button {
 
 button .more-button {
   width: 100%;
-  position: relative;
 }
 
 /* content_details */
@@ -222,6 +221,7 @@ button .more-button {
   display: block;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .content__card-link_current {
