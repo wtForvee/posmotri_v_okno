@@ -11,7 +11,7 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  margin: 0 auto;
+  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -54,7 +54,7 @@ ol {
   display: flex;
   align-items: end;
   column-gap: 30px;
-  margin: 133px 30px;
+  margin: auto;
 }
 
 .result {
