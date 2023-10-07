@@ -90,6 +90,7 @@ ol {
 }
 
 /* search */
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -178,7 +179,6 @@ button .more-button {
 /* content_details */
 /* title */
 
-
 .title {
   font-family: Oswald;
   font-size: 75px;
@@ -205,7 +205,6 @@ button .more-button {
   justify-content: space-between;
   align-items: start;
   padding: 2px;
-  
 }
 
 .content__video-card-description {
@@ -262,7 +261,7 @@ input[type='checkbox']:active + .search-form__pseudo-checkbox::before {
   border-left: 1px solid #FFF;
 }
 
-button:active, 
+button:active,
 .content__list-item:active {
   background-color: #545050;
 }
@@ -285,7 +284,6 @@ button:hover {
   text-decoration: underline;
   text-underline-position: under;
 }
-
 
 /* focus */
 
