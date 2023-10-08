@@ -39,6 +39,7 @@ ol {
 }
 
 /* content */
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -51,30 +52,20 @@ ol {
 
 .content {
   width: 1140px;
-  height: 534px;
   display: flex;
   align-items: end;
   column-gap: 30px;
   margin: auto;
 }
 
+/* result */
+/* main */
+
 .result {
   display: flex;
   flex-direction: column;
   gap: 16px;
 } 
-
-.content__list {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 30px;
-  height: 298px;
-  overflow-y: auto;
-  padding: 0 3px 3px 3px;
-  margin: 0 -3px -3px -3px;
-}
 
 /* video */
 
@@ -103,7 +94,6 @@ ol {
 }
 
 .search-form__fieldset-title {
-  min-height: 22px;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 5px;
@@ -117,7 +107,7 @@ ol {
   cursor: pointer;
 }
 
-input[type="text"] {
+.search-form__textfield {
   padding-left: 0;
   min-width: 225px;
   min-height: 27px;
@@ -125,7 +115,7 @@ input[type="text"] {
   border-bottom: 1px solid #FFF;
   border-right: none;
   border-left: none;
-  color: rgba(255, 255, 255, 0.70);
+  color: inherit;
   font-family: 'Fira Sans Condensed';
   font-size: 18px;
   font-weight: 400;
@@ -158,7 +148,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 
 button {
   width: 194px;
-  height: 34px;
+  min-height: 34px;
   background-color: transparent;
   border: 1px solid #FFF;
   color: #FFF;
@@ -172,10 +162,6 @@ button.search-form__submit-button {
   align-self: flex-end;
 }
 
-button .more-button {
-  width: 100%;
-}
-
 /* content_details */
 /* title */
 
@@ -186,7 +172,6 @@ button .more-button {
   line-height: 94%;
   text-transform: uppercase;
   margin-bottom: 26px;
-  max-height: 210px;
 }
 
 .dash {
@@ -199,6 +184,21 @@ button .more-button {
 }
 
 /* content-list */
+
+.content__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  height: 298px;
+  overflow-y: auto;
+  overflow-x: auto; /* не совсем понял где наблюдается горизонтальный скролл, добавил в этот класс на всякий */
+  padding: 0 3px 3px 3px;
+  margin: 0 -3px -3px -3px;
+}
+
+/* cards */
 
 .content__video-card {
   display: flex;
@@ -215,6 +215,7 @@ button .more-button {
   width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__card-link {
@@ -306,17 +307,3 @@ button:focus-visible {
   outline: 1px solid #FFF;
   outline-offset: -1px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
